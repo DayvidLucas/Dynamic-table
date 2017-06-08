@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Calcular Médias</title>
+		<link rel="stylesheet" type="text/css" herf="tabela.css">
+	</head>
+<body>
+<script src="tabela.js"></script>
+
+
+<form method="GET" align='center'>
+	<table align='center' border="1" width="20%" id="table" cellpadding="10%" cellspacing="5">
+	<thead>
+	   	<tr align="center"> <td colspan="3" align="center"> <b>Tabela</b> <input type="text" class="nlinhas" size='2' align="center" /> <input type="button" id='btn-completar' value='Add Linhas'> </td> </tr> 
+		<tr><td> <i> X(i) </i></td>
+			<td colspan="2"><i>F(i)</i></td>
+			
+		</tr>
+	</thead>
+ 
+	<tbody id='inserirLinha'>
+	
+	</tbody>
+
+	<tfoot>
+		<tr>
+			 <td><b>Ma</b></td>
+			 <td><b>Mg </b></td>
+			 <td><b>Mh </b></td>
+		 </tr>
+			 <tr><td class='ma' id='ma'><font color="red">Ma </font></td> 
+			 <td class='mg' id='mg'><font color="red">Mg </font> </td>
+			 <td class='mh' id='mh'><font color="red">Mh </font></td>
+		 </tr>
+		 <tr>
+<td colspan="3" align="center">
+<input type="button" name="enviar" onclick="valorTabela()" value="enviar" /></td>
+ </tr>
+
+	</tfoot>
+	 
+		
+
+
+	</table>
+
+	</form>
+<script type="text/javascript">
+	var a = document.getElementById('btn-completar');
+   a.onclick = completarTabela;
+</script>
+
+
+
+
+
+
+</body>
+</html>

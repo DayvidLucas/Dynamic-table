@@ -1,0 +1,6 @@
+table tr:nth-child(even) {
+	background: #CCC;
+}
+table tr:nth-child(odd) {
+	background: #FFF;
+}
